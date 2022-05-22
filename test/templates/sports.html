@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="{{ url_for('static', filename='index.js')}}"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://kit.fontawesome.com/43dcc20e7a.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <title>Latest News</title>
+    </head>
+
+    <body id="page" onload="search('sports')">
+        <h1 class="titles">Sports!</h1>
+        <h3 class="subtitles">The Competition that Holds the World!</h3>
+        <img src="{{url_for('static', filename='sports.jpg')}}" alt="pls work" class="center"/>
+        <div id="container" class="container">
+            
+            </div>
+    
+            <div class="loading_msg" style="display:none">Processing...
+            </div>
+        </div>
+        <div id="items"></div>
+    </body>
+
+</html>
